@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/cut_card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#1976D2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="35dp"
+                android:layout_height="31dp"
+                android:src="@drawable/backbutton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Result"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#57DCC3DF"
+
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Percentage"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="---"
+                        android:inputType="number"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/percentage" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+
+            >
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E2ABD883">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:inputType="date"
+                    android:padding="10sp"
+                    android:text="Date"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/col"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/col1"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtMarks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/col2"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/tvEng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:hint="set date"
+                    android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="English"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFEAE3E3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/row2Totalmarks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editEnglish"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFCBCDCD"
+                    android:gravity="center_horizontal"
+                    android:hint="----"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+
+                    android:id="@+id/tvMaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:hint="set date"
+                    android:inputType="date" />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Maths"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFEAE3E3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/row2Totalmarks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editMaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFCBCDCD"
+                    android:gravity="center_horizontal"
+                    android:hint="----"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+
+                    android:id="@+id/tvSci"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:hint="set date"
+                    android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Science"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFEAE3E3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/row2Totalmarks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editScience"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFCBCDCD"
+                    android:gravity="center_horizontal"
+                    android:hint="----"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+
+                    android:id="@+id/tvHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:hint="set date"
+                    android:inputType="date"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="History"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFEAE3E3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/row2Totalmarks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFCBCDCD"
+                    android:gravity="center_horizontal"
+                    android:hint="----"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:id="@+id/tvGeography"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:hint="set date"
+                    android:inputType="date" />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Geography"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFEAE3E3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/row2Totalmarks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editGeography"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFCBCDCD"
+                    android:gravity="center_horizontal"
+                    android:hint="----"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:id="@+id/tvSanskrit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:hint="set date"
+                    android:inputType="date" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Sanskrit"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFEAE3E3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/row2Totalmarks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editSanskrit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="#DFCBCDCD"
+                    android:gravity="center_horizontal"
+                    android:hint="----"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+
+            <!--            <TableRow>-->
+
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/tvComp"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="4"-->
+            <!--                        android:gravity="center_horizontal"-->
+            <!--                        android:padding="10sp"-->
+            <!--                        android:hint="set date"-->
+            <!--                        android:inputType="date" />-->
+
+
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:text="Computer"-->
+            <!--                    android:textColor="@color/colorBlack"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:background="#DFEAE3E3"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:text="@string/row2Totalmarks"-->
+            <!--                    android:textColor="@color/colorBlack"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:background="#DFCBCDCD"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:hint="&#45;&#45;&#45;&#45;"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:textColor="@color/colorBlack"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--            </TableRow>-->
+
+            <!--            <TableRow-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:background="@color/colorGreen">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:text="-&#45;&#45;&#45;&#45;"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:text="Total"-->
+            <!--                    android:textColor="@color/colorBlack"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:background="#DFEAE3E3"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:text="700"-->
+            <!--                    android:textColor="@color/colorBlack"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="4"-->
+            <!--                    android:background="#DFCBCDCD"-->
+            <!--                    android:gravity="center_horizontal"-->
+            <!--                    android:hint="&#45;&#45;&#45;&#45;"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:padding="10sp"-->
+            <!--                    android:textColor="@color/colorBlack"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--            </TableRow>-->
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

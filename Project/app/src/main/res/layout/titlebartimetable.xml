@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:background="#1976D2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="31dp"
+            android:src="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/btnTimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Timetable"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

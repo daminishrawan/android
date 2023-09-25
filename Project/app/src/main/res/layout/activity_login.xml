@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:background="@drawable/loginschool"
+    tools:context=".Activity.LoginActivity"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Student"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#E0F3FF"
+        android:layout_gravity="left"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to continue"
+        android:textSize="15dp"
+        android:textColor="#E0F3FF"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp">
+    </TextView>
+    <EditText
+        android:id="@+id/editEmail"
+        android:hint="Mobile No/Email"
+        android:textColorHint="#E0F3FF"
+        android:textColor="#E0F3FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editPassword"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:textColorHint="#E0F3FF"
+        android:textColor="#E0F3FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:text="Remember Me"
+        android:textColor="#E0F3FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+
+</LinearLayout>

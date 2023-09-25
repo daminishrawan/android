@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="col">Subject</string>
+    <string name="col1">Total Marks</string>
+    <string name="col2">Marks Obtained</string>
+    <string name="row2Totalmarks">100</string>
+    <string name="eventdescription1">The concept behind this event is simple and it’s a great alternative to a more traditional Halloween party.    </string>
+</resources>
